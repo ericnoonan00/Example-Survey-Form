@@ -1,1 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: #feac5e;
+	background: -webkit-linear-gradient(135deg, #4bc0c8, #c779d0, #feac5e);
+	background: linear-gradient(135deg, #4bc0c8, #c779d0, #feac5e);
+
+	animation: bg-animation 5s infinite alternate;
+	background-size: 400%;
+
+	font-size: 16pt;
+	font-family: "Poppins", sans-serif;
+}
+
+header {
+	position: relative;
+	width: -moz-fit-content;
+	width: fit-content;
+	height: auto;
+	margin: 10px auto;
+	font-size: min(1em, 3vw);
+}
+
+main {
+	background-color: rgba(0, 0, 0, 0.3);
+	color: hsl(69, 69%, 100%);
+
+	width: 40%;
+	min-width: 500px;
+	height: auto;
+	margin: 0 auto;
+	margin-bottom: 50px;
+	border: none;
+	padding: 0.5vw 2vw;
+}
+
+.survey__section {
+	padding: 15px 0;
+	margin: 5px 0;
+}
+
+form p {
+	font-size: 1.2em;
+}
+#name-label,
+#email-label,
+#number-label {
+	font-size: 1.2em;
+}
+
+.non-button-input,
+textarea,
+#submit {
+	width: 99%;
+	height: 30px;
+	padding: 5px;
+	font-family: "Poppins", sans-serif;
+	border: none;
+	border-radius: 5px;
+}
+textarea {
+	height: 100px;
+}
+
+#submit {
+	height: 50px;
+	font-size: 1em;
+	cursor: pointer;
+	color: black;
+	background: whitesmoke;
+}
+
+@keyframes bg-animation {
+	0% {
+		background-position: left;
+	}
+	100% {
+		background-position: right;
+	}
+}
+
+.hint {
+	font-size: 0.7em;
+	font-style: italic;
+}
