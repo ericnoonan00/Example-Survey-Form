@@ -1,1 +1,70 @@
+    <header>
+        <h1 id="title">freeCodeCamp Survey Form</h1>
+        <p id="description">Please complete this short survey about <span style="color: white;">cats.</span> Thank you.</p>
+    </header>
+    
+
+    <main>
+        <form id="survey-form">
+            <section class="survey__section" id="name-section">
+                <label for="name" id="name-label">Name:</label><br>
+                <input class="non-button-input" type="text" id="name" placeholder="Name..." required>
+            </section>
+
+            <section class="survey__section" id="email-section">
+                <label for="email" id="email-label">Email:</label><br>
+                <input class="non-button-input" type="email" id="email" placeholder="ex: email@email.online" required>
+            </section>
+
+            <section class="survey__section" id="cat-age-section">
+                <label for="number" id="number-label">How old is your cat? <span class="hint">(optional)</span></label><br>
+                <input class="non-button-input" type="number" name="number" id="number" min="1" max="25" placeholder="1-25">
+            </section>
+
+            <section class="survey__section" id="dropdown-section">
+                <p>Which best describes your cat's attitude?</p>
+                <select class="non-button-input" name="catitude" id="dropdown" required>
+                    <option disabled selected value>Please Choose One</option>
+                    <option value="greedy">Greedy</option>
+                    <option value="cheerful">Cheerful</option>
+                    <option value="sassy">Sassy</option>
+                    <option value="introverted">Introverted</option>
+                    <option value="lazy">Lazy</option>
+                </select>
+            </section>
+
+            <section class="survey__section" id="radio-section">
+                <p id="radio-label">Would you recommend cats to a friend?</p>
+                <label for="yes">Yes</label>
+                <input type="radio" name="radio-selection" id="Yes" value="yes" checked><br>
+                <label for="no">No</label>
+                <input type="radio" name="radio-selection" id="no" value="no"><br>
+                <label for="unsure">Unsure</label>
+                <input type="radio" name="radio-selection" id="unsure" value="unsure">
+            </section>
+            
+            <section class="survey__section" id="checkbox-section">
+                <p id="checkbox-label">What types of cats do you like? <span class="hint">(select all that apply)</span></p>
+                <label for="calico">Calico</label>
+                <input type="checkbox" name="checkbox-selection" id="calico" value="calico"><br>
+                <label for="tabby">Tabby</label>
+                <input type="checkbox" name="checkbox-selection" id="tabby" value="tabby"><br>
+                <label for="black">Black</label>
+                <input type="checkbox" name="checkbox-selection" id="black" value="black"><br>
+                <label for="Other">Other</label>
+                <input type="checkbox" name="checkbox-selection" id="other" value="other">
+            </section>
+
+            <section class="survey__section" id="comments-section">
+                <p id="text-field-label">Any comments about your cat? <span class="hint">(Optional)</span></p>
+                <textarea name="comments" id="comments" cols="30" rows="5"></textarea>
+            </section>
+            
+            
+            
+            <section class="survey__section" id="comments-section">
+                <input type="submit" value="Submit" id="submit">
+            </section>
+        </form>
+    </main>
 
